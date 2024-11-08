@@ -1,0 +1,6 @@
+pandas
+python-dotenv
+nylas
+pendulum
+googleapiclient
+google
