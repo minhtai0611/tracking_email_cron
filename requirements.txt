@@ -2,5 +2,4 @@ pandas
 python-dotenv
 nylas
 pendulum
-googleapiclient
-google
+google-api-python-client
