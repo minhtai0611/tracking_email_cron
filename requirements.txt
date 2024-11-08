@@ -3,4 +3,3 @@ python-dotenv
 nylas
 pendulum
 google-api-python-client
-os
