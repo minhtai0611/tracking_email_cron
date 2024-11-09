@@ -19,7 +19,7 @@ credentials = service_account.Credentials.from_service_account_info({
   "token_uri": os.getenv('TOKEN_URI'),
   "auth_provider_x509_cert_url": os.getenv('AUTH_PROVIDER_CERT_URL'),
   "client_x509_cert_url": os.getenv('CLIENT_CERT_URL'),
-  "universe_domain": os.getenv('UNIVERSE_DOMAIN')"
+  "universe_domain": os.getenv('UNIVERSE_DOMAIN')
 })
 spreadsheet_service = build('sheets', 'v4', credentials=credentials)
 
