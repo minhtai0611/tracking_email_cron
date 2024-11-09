@@ -43,6 +43,12 @@ jobs:
           CLIENT_CERT_URL: ${{ secrets.CLIENT_CERT_URL }}
           UNIVERSE_DOMAIN: ${{ secrets.UNIVERSE_DOMAIN }}
           SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+          API_KEY: ${{ secrets.API_KEY }}
+          GRANT_ID: ${{ secrets.GRANT_ID }}
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+          EMAIL: ${{ secrets.EMAIL }}
+          API_URI: ${{ secrets.API_URI }}
+          API_KEY_WEBHOOK_URL: ${{ secrets.API_KEY_WEBHOOK_URL }}
         run: |
           python tracking_email.py
 
