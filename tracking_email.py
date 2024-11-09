@@ -12,7 +12,7 @@ credentials = service_account.Credentials.from_service_account_info({
   "type": f"{os.getenv('TYPE')}",
   "project_id": f"{os.getenv('PROJECT_ID')}",
   "private_key_id": f"{os.getenv('PRIVATE_KEY_ID')}",
-  "private_key": f"{os.getenv('PRIVATE_KEY')}",
+  "private_key": f"{os.getenv('PRIVATE_KEY')}.replace("\\n", "\n")",
   "client_email": f"{os.getenv('CLIENT_EMAIL')}",
   "client_id": f"{os.getenv('CLIENT_ID')}",
   "auth_uri": f"{os.getenv('AUTH_URI')}",
