@@ -42,6 +42,7 @@ jobs:
           AUTH_PROVIDER_CERT_URL: ${{ secrets.AUTH_PROVIDER_CERT_URL }}
           CLIENT_CERT_URL: ${{ secrets.CLIENT_CERT_URL }}
           UNIVERSE_DOMAIN: ${{ secrets.UNIVERSE_DOMAIN }}
+          SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
         run: |
           python tracking_email.py
 
