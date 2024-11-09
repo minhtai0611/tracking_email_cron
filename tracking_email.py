@@ -9,17 +9,17 @@ load_dotenv()
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
 credentials = service_account.Credentials.from_service_account_info({
-  "type": os.environ['TYPE'],
-  "project_id": os.environ['PROJECT_ID'],
-  "private_key_id": os.environ['PRIVATE_KEY_ID'],
-  "private_key": os.environ['PRIVATE_KEY'],
-  "client_email": os.environ['CLIENT_EMAIL'],
-  "client_id": os.environ['CLIENT_ID'],
-  "auth_uri": os.environ['AUTH_URI'],
-  "token_uri": os.environ['TOKEN_URI'],
-  "auth_provider_x509_cert_url": os.environ['AUTH_PROVIDER_CERT_URL'],
-  "client_x509_cert_url": os.environ['CLIENT_CERT_URL'],
-  "universe_domain": os.environ['UNIVERSE_DOMAIN']
+  "type": os.getenv('TYPE'),
+  "project_id": os.getenv('PROJECT_ID'),
+  "private_key_id": os.getenv('PRIVATE_KEY_ID'),
+  "private_key": os.getenv('PRIVATE_KEY'),
+  "client_email": os.getenv('CLIENT_EMAIL'),
+  "client_id": os.getenv('CLIENT_ID'),
+  "auth_uri": os.getenv('AUTH_URI'),
+  "token_uri": os.getenv('TOKEN_URI'),
+  "auth_provider_x509_cert_url": os.getenv('AUTH_PROVIDER_CERT_URL'),
+  "client_x509_cert_url": os.getenv('CLIENT_CERT_URL'),
+  "universe_domain": os.getenv('UNIVERSE_DOMAIN')
 })
 spreadsheet_service = build('sheets', 'v4', credentials=credentials)
 
